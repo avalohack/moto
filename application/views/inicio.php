@@ -6,28 +6,6 @@
 </head>
 <body>
 
-
-
-
-<div class="container">
-  <div class="box-1">
-    box-1
-  <div>
-  <div class="box-2">
-    box-2
-  <div>
-  <div class="box-3">
-    box-3
-  <div>
-  <div class="box-4">
-    box-4
-  <div>
-  <div class="box-5">
-    box-5
-  <div>
-<div>
-
-
 -----------------------------------------
 
 
