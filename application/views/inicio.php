@@ -6,8 +6,46 @@
 </head>
 <body>
 
------------------------------------------
 
+
+<div id="tabla"></div>
+
+	<script>
+			var obj, dbParam, xmlhttp, myObj, x, txt = "";
+			obj = { "table":"customers","id":"id" };
+			dbParam = JSON.stringify(obj);
+			xmlhttp = new XMLHttpRequest();
+			alert(xmlhttp);
+			xmlhttp.onreadystatechange = function()
+				 {
+				    if (this.readyState == 4 && this.status == 200) 
+					    {
+					        myObj = JSON.parse(this.responseText);
+					        txt += "<table border='1'>"
+					        for (x in myObj)
+						    {
+						            txt += "<tr><td>" + myObj[x].name + "</td></tr>";
+						    }
+				        txt += "</table>"        
+				        document.getElementById("tabla").innerHTML = txt;
+				   		 }
+				};
+			xmlhttp.open("POST", "index.php/inicio/moto_inicio", true);
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlhttp.send("x=" + dbParam);
+	</script>
+
+</body>
+</html>
+
+
+<!--
+!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
 
 	
 <div id="head"></div>
