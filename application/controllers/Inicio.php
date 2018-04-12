@@ -15,7 +15,8 @@ class Inicio extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('inicio');
+		$vector['motos']= $this->model_inicio->ranking_descendente();
+		$this->load->view('inicio',$vector);
 	}
 
 
