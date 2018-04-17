@@ -8,6 +8,13 @@
 </head>
 <body>
 
+
+<?php include"incluidos/header.php" ?>
+
+<?php include"incluidos/banner.php" ?>
+
+
+<section id='body'>
 	<table id='websendeos'>
 		<thead>
 			<tr>
@@ -16,33 +23,35 @@
 				<th>Sirve de</th>
 				<th>Foto</th>
 				<th>Recomendacion</th>
-				<th>correo</th>
-				<td>Registro</td>
+				<!--<th>correo</th>-->
+				<!--<td>Registro</td>-->
 				<th>ranking</th>
-				<th>.</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php 
-				var_dump($motos);
+			//	var_dump($motos);
 				foreach ($motos as $key)
 					{ ?>
 						<tr>
-							<td> <?php 	echo"parte_original"; ?>    </td>
-							<td> <?php 	echo"modelo_original"; ?>   </td>
-							<td> <?php 	echo"modelo_igual"; ?>      </td>
-							<td> <?php 	echo"img"; ?>   			</td>
-							<td> <?php 	echo"recomendaciones"; ?>   </td>
-							<td> <?php 	echo"correo"; ?>   			</td>
-							<td> <?php 	echo"registro"; ?>   		</td>
-							<td> <?php 	echo"ranking"; ?>   		</td>
-							<td> <?php 	echo"<a href='#'' target=?_blank>Ver demo</a>"; ?>   			</td>
+							<td> <?php 	echo $key["parte_original"]; ?>    </td>
+							<td> <?php 	echo $key["modelo_original"]; ?>   </td>
+							<td> <?php 	echo $key["modelo_igual"]; ?>      </td>
+							<td> <?php 	echo $key["img"]; ?>   			</td>
+							<td> <?php 	echo $key["recomendaciones"]; ?>   </td>
+							<!--<td> <?php 	echo $key["registro"]; ?>  		</td>-->
+							<!--<td> <?php 	echo $key["correo"]; ?>   		</td>-->
+							<td> <?php 	echo $key["ranking"]; ?>   		</td>
 						</tr>			
 			<?php
 					}
 			?>
 		</tbody>
 	</table>
+</section>
+	
+
+
 
 <script src="vendor/js/jquery-1.7.min.js"></script>
 <script src="vendor/js/stacktable.js"></script>

@@ -1,5 +1,6 @@
 /* h5bp.com/css */
 
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 [hidden] { display: none; }
@@ -19,7 +20,12 @@ a { color: #20A6DB; text-decoration: none;
 }
 a:visited { color: #20A6DB; }
 a:hover { color: #25BBF7; }
+
+
 /* a:focus { outline: thin dotted; } */
+
+
+
 a:focus { outline: none; }
 a:hover, a:active { outline: 0; }
 
@@ -47,7 +53,14 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 
+
+
+
+
 /* Primary Styles */
+
+
+
 
 body { color: #333; padding: 0 1.5em 3em; }
 
@@ -151,7 +164,14 @@ input[readonly] {
 .footer-ad { width:100%; text-align: center; margin: 4em 0; }
 .footer-ad img { width:100%; max-width: 728px; border: solid 1px #eee; }
 
+
+
+
+
+
 /* Helpers */
+
+
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
 .hidden { display: none !important; visibility: hidden; }
@@ -160,4 +180,4 @@ input[readonly] {
 .invisible { visibility: hidden; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }*/
+.clearfix { *zoom: 1; }
