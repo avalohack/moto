@@ -1,1 +1,3 @@
-<section id='banner'></section>
+<section id='banner'>
+	
+</section>

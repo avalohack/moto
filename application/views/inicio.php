@@ -18,9 +18,9 @@
 	<table id='websendeos'>
 		<thead>
 			<tr>
-				<th>Parte</th>
-				<th>Moto</th>
-				<th>Sirve de</th>
+				<th>Pieza</th>
+				<th>Moto / Modelo</th>
+				<th>Le sirve de Moto</th>
 				<th>Foto</th>
 				<th>Recomendacion</th>
 				<!--<th>correo</th>-->
@@ -41,7 +41,9 @@
 							<td> <?php 	echo $key["recomendaciones"]; ?>   </td>
 							<!--<td> <?php 	echo $key["registro"]; ?>  		</td>-->
 							<!--<td> <?php 	echo $key["correo"]; ?>   		</td>-->
-							<td> <?php 	echo $key["ranking"]; ?>   		</td>
+							<td> <?php 	echo $key["ranking"]; ?>   
+								<div   id="ranking_up"><a href="" ><</a></div>
+								<dir id="ranking_down"><a href="" >></a></dir>	</td>
 						</tr>			
 			<?php
 					}
@@ -49,7 +51,20 @@
 		</tbody>
 	</table>
 </section>
+<section id='botones'>
+	<a href="#agregar_iten">+</a>
+</section>
 	
+<section id="agregar_iten">
+	<form action="#" method="POST">
+		<input type="text" name="Pieza" placeholder="Pieza">
+		<input type="text" name="Moto / Modelo" placeholder="Moto / Modelo">
+		<input type="text" name="Le sirve de Moto" placeholder="Le sirve de Moto">
+		<input type="text" name="Foto" placeholder="Foto">
+		<input type="text" name="Recomendacion" placeholder="Recomendacion">
+		<button>Guardar</button>
+	</form>
+</section>
 
 
 
