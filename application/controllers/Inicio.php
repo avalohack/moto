@@ -8,6 +8,7 @@ class Inicio extends CI_Controller {
 			parent ::__construct();
 
 			$this->load->model('model_inicio');
+			$this->load->helper('url');
 
 		}
 	
@@ -16,7 +17,7 @@ class Inicio extends CI_Controller {
 	public function index()
 	{
 		$vector['motos']= $this->model_inicio->ranking_descendente();
-		$this->load->view('inicio',$vector);
+		$this->load->view('inicio_view',$vector);
 	}
 
 
